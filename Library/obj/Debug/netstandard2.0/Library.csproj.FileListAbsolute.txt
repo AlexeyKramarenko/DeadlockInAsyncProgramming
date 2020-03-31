@@ -1,0 +1,9 @@
+C:\Users\krama\Desktop\New folder (2)\Async-Programming\Library\bin\Debug\netstandard2.0\Library.deps.json
+C:\Users\krama\Desktop\New folder (2)\Async-Programming\Library\bin\Debug\netstandard2.0\Library.dll
+C:\Users\krama\Desktop\New folder (2)\Async-Programming\Library\bin\Debug\netstandard2.0\Library.pdb
+C:\Users\krama\Desktop\New folder (2)\Async-Programming\Library\obj\Debug\netstandard2.0\Library.csprojAssemblyReference.cache
+C:\Users\krama\Desktop\New folder (2)\Async-Programming\Library\obj\Debug\netstandard2.0\Library.csproj.CoreCompileInputs.cache
+C:\Users\krama\Desktop\New folder (2)\Async-Programming\Library\obj\Debug\netstandard2.0\Library.AssemblyInfoInputs.cache
+C:\Users\krama\Desktop\New folder (2)\Async-Programming\Library\obj\Debug\netstandard2.0\Library.AssemblyInfo.cs
+C:\Users\krama\Desktop\New folder (2)\Async-Programming\Library\obj\Debug\netstandard2.0\Library.dll
+C:\Users\krama\Desktop\New folder (2)\Async-Programming\Library\obj\Debug\netstandard2.0\Library.pdb
