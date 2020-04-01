@@ -21,6 +21,8 @@ namespace Application
              Trace:
                 On UI thread: BEGINNING of EventHandler
                 On UI thread: Beginning of GetText 
+                
+              ---------DEADLOCK---------
         */
         private void BLOCKING_UI_CALL_WITH_DEADLOCK(object sender, EventArgs e)
         {

@@ -48,7 +48,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "3. PARALLEL NOT AWAITED CALL";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this._3_EXECUTION_IN_PARALLEL_DUE_TO_NOT_AWAITED_CALL);
+            this.button1.Click += new System.EventHandler(this.EXECUTION_IN_PARALLEL_DUE_TO_NOT_AWAITED_CALL);
             // 
             // button2
             // 
@@ -58,7 +58,7 @@
             this.button2.TabIndex = 2;
             this.button2.Text = "6. ASYNC CALL using async keyword";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this._6_ASYNCHRONOUS_EXECUTION_USING_AWAIT_KEYWORD);
+            this.button2.Click += new System.EventHandler(this.ASYNCHRONOUS_EXECUTION_USING_AWAIT_KEYWORD);
             // 
             // button3
             // 
@@ -68,7 +68,7 @@
             this.button3.TabIndex = 3;
             this.button3.Text = "7. ASYNC CALL without switching of context";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this._7_ASYNCHRONOUS_EXECUTION_USING_AWAIT_KEYWORD_WITHOUT_SWITCHING_OF_SynchronisationContext_AFTER_EXECUTION_OF_LIBRARY_METHOD);
+            this.button3.Click += new System.EventHandler(this.ASYNCHRONOUS_EXECUTION_USING_AWAIT_KEYWORD_WITHOUT_SWITCHING_OF_SynchronisationContext_AFTER_EXECUTION_OF_LIBRARY_METHOD);
             // 
             // button4
             // 
@@ -78,7 +78,7 @@
             this.button4.TabIndex = 4;
             this.button4.Text = "1. BLOCKING UI CALL with DEADLOCK";
             this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this._1_BLOCKING_OF_UI_THREAD_WITH_DEADLOCK_DUE_TO_ConfigureAwaitTrue_IN_THE_LIBRARY_METHOD);
+            this.button4.Click += new System.EventHandler(this.BLOCKING_OF_UI_THREAD_WITH_DEADLOCK_DUE_TO_ConfigureAwaitTrue_IN_THE_LIBRARY_METHOD);
             // 
             // button5
             // 
@@ -88,7 +88,7 @@
             this.button5.TabIndex = 5;
             this.button5.Text = "2. BLOCKING UI CALL";
             this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this._2_BLOCKING_OF_UI_THREAD_BUT_WITHOUT_DEADLOCK_BECAUSE_OF_ConfigureAwaitFalse_IN_THE_LIBRARY_METHOD);
+            this.button5.Click += new System.EventHandler(this.BLOCKING_OF_UI_THREAD_BUT_WITHOUT_DEADLOCK_BECAUSE_OF_ConfigureAwaitFalse_IN_THE_LIBRARY_METHOD);
             // 
             // button7
             // 
@@ -98,7 +98,7 @@
             this.button7.TabIndex = 7;
             this.button7.Text = "4. ASYNC CALL using GetAwaiter";
             this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this._4_ASYNCHRONOUS_EXECUTION_USING_GetAwaiterMethod);
+            this.button7.Click += new System.EventHandler(this.ASYNCHRONOUS_EXECUTION_USING_GetAwaiterMethod);
             // 
             // button8
             // 
@@ -108,7 +108,7 @@
             this.button8.TabIndex = 8;
             this.button8.Text = "5. ASYNC CALL using ContinueWith";
             this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this._5_ASYNCHRONOUS_EXECUTION_USING_ContinueWithMethod);
+            this.button8.Click += new System.EventHandler(this.ASYNCHRONOUS_EXECUTION_USING_ContinueWithMethod);
             // 
             // label1
             // 

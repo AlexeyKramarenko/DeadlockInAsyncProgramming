@@ -24,7 +24,7 @@ namespace Application
 
               ---------DEADLOCK---------
         */
-        private void _1_BLOCKING_OF_UI_THREAD_WITH_DEADLOCK_DUE_TO_ConfigureAwaitTrue_IN_THE_LIBRARY_METHOD(object sender, EventArgs e)
+        private void BLOCKING_OF_UI_THREAD_WITH_DEADLOCK_DUE_TO_ConfigureAwaitTrue_IN_THE_LIBRARY_METHOD(object sender, EventArgs e)
         {
             Logger.Write("Beginning of EventHandlerMethod");   // on UI thread 
 
@@ -45,7 +45,7 @@ namespace Application
                      On ThreadPool thread: End of SafeMethodAsync
                 On UI thread: End of EventHandlerMethod
         */
-        private void _2_BLOCKING_OF_UI_THREAD_BUT_WITHOUT_DEADLOCK_BECAUSE_OF_ConfigureAwaitFalse_IN_THE_LIBRARY_METHOD(object sender, EventArgs e)
+        private void BLOCKING_OF_UI_THREAD_BUT_WITHOUT_DEADLOCK_BECAUSE_OF_ConfigureAwaitFalse_IN_THE_LIBRARY_METHOD(object sender, EventArgs e)
         {
             Logger.Write("Beginning of EventHandlerMethod");   // on UI thread 
 
@@ -65,7 +65,7 @@ namespace Application
                      On ThreadPool thread: Called Thread.Sleep (SafeMethodAsync)
                      On ThreadPool thread: End of SafeMethodAsync
         */
-        private void _3_EXECUTION_IN_PARALLEL_DUE_TO_NOT_AWAITED_CALL(object sender, EventArgs e)
+        private void EXECUTION_IN_PARALLEL_DUE_TO_NOT_AWAITED_CALL(object sender, EventArgs e)
         {
             Logger.Write("Beginning of EventHandlerMethod");   // on UI thread 
 
@@ -85,7 +85,7 @@ namespace Application
                      On ThreadPool thread: End of SafeMethodAsync
                 On UI thread: End of EventHandlerMethod
         */
-        private void _4_ASYNCHRONOUS_EXECUTION_USING_GetAwaiterMethod(object sender, EventArgs e)
+        private void ASYNCHRONOUS_EXECUTION_USING_GetAwaiterMethod(object sender, EventArgs e)
         {
             Logger.Write("Beginning of EventHandlerMethod");   // on UI thread 
 
@@ -108,8 +108,7 @@ namespace Application
                  On ThreadPool thread: End of SafeMethodAsync
                  On ThreadPool thread: End of EventHandlerMethod
        */
-        //Последовательное выполнение без блокировки UI thread
-        private void _5_ASYNCHRONOUS_EXECUTION_USING_ContinueWithMethod(object sender, EventArgs e)
+        private void ASYNCHRONOUS_EXECUTION_USING_ContinueWithMethod(object sender, EventArgs e)
         {
             Logger.Write("Beginning of EventHandlerMethod");   // on UI thread 
 
@@ -128,7 +127,7 @@ namespace Application
                      On ThreadPool thread: End of SafeMethodAsync
                 On UI thread: End of EventHandlerMethod
         */
-        private async void _6_ASYNCHRONOUS_EXECUTION_USING_AWAIT_KEYWORD(object sender, EventArgs e)
+        private async void ASYNCHRONOUS_EXECUTION_USING_AWAIT_KEYWORD(object sender, EventArgs e)
         {
             Logger.Write("Beginning of EventHandlerMethod");   // on UI thread 
 
@@ -149,7 +148,7 @@ namespace Application
                      On ThreadPool thread: End of SafeMethodAsync
                      On ThreadPool thread: End of EventHandlerMethod
         */
-        private async void _7_ASYNCHRONOUS_EXECUTION_USING_AWAIT_KEYWORD_WITHOUT_SWITCHING_OF_SynchronisationContext_AFTER_EXECUTION_OF_LIBRARY_METHOD(object sender, EventArgs e)
+        private async void ASYNCHRONOUS_EXECUTION_USING_AWAIT_KEYWORD_WITHOUT_SWITCHING_OF_SynchronisationContext_AFTER_EXECUTION_OF_LIBRARY_METHOD(object sender, EventArgs e)
         {
             Logger.Write("Beginning of EventHandlerMethod");   // on UI thread 
 
