@@ -153,8 +153,8 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Name = "MethodsInvokingForm";
-            this.Text = "Form1";
+            this.Name = "VoidMethodsForm";
+            this.Text = "VoidMethodsForm";
             this.ResumeLayout(false);
             this.PerformLayout();
 

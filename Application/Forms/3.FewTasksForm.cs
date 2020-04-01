@@ -65,16 +65,11 @@ namespace Application
                 On UI thread: End of DangerousMethodAsync
                 On UI thread: END of EventHandler
         */
-        private void NON_BLOCKING_UI_CALL(object sender, EventArgs e)
+        private async void NON_BLOCKING_UI_CALL(object sender, EventArgs e)
         {
             Logger.Write("BEGINNING of EventHandler"); // on UI thread
 
-            Task.WhenAll(_service.DangerousMethodAsync(), _task2, _task3)
-                .ContinueWith(_ =>
-                {
-                    label1.Text = "Done";
-
-                }, TaskScheduler.FromCurrentSynchronizationContext());
+            await Task.WhenAll(_service.DangerousMethodAsync(), _task2, _task3);
 
             Logger.Write("END of EventHandler"); // on UI thread
         }
@@ -113,11 +108,16 @@ namespace Application
                 On UI thread: End of DangerousMethodAsync
                 On UI thread: END of EventHandler
         */
-        private async void GET_AWAITER(object sender, EventArgs e)
+        private void GET_AWAITER(object sender, EventArgs e)
         {
             Logger.Write("BEGINNING of EventHandler"); // on UI thread
 
-            await Task.WhenAll(_service.DangerousMethodAsync(), _task2, _task3);
+            Task.WhenAll(_service.DangerousMethodAsync(), _task2, _task3)
+                .ContinueWith(_ =>
+                {
+                    label1.Text = "Done";
+
+                }, TaskScheduler.FromCurrentSynchronizationContext());
 
             Logger.Write("END of EventHandler"); // on UI thread
         }

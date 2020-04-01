@@ -127,8 +127,8 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Name = "GettingResultForm";
-            this.Text = "ResultForm";
+            this.Name = "MethodsWithResultForm";
+            this.Text = "MethodsWithResultForm";
             this.ResumeLayout(false);
             this.PerformLayout();
 

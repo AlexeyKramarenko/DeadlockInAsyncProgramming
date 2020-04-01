@@ -70,7 +70,7 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.label1);
             this.Name = "ExceptionHandlingForm";
-            this.Text = "ExceptionForm";
+            this.Text = "ExceptionHandlingForm";
             this.ResumeLayout(false);
             this.PerformLayout();
 

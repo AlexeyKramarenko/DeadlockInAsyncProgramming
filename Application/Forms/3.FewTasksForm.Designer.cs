@@ -56,7 +56,7 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "3. NON-BLOCKING UI CALL";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.GET_AWAITER);
+            this.button2.Click += new System.EventHandler(this.NON_BLOCKING_UI_CALL);
             // 
             // button3
             // 
@@ -66,7 +66,7 @@
             this.button3.TabIndex = 2;
             this.button3.Text = "4. ContinueWith";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.NON_BLOCKING_UI_CALL);
+            this.button3.Click += new System.EventHandler(this.CONTINUE_WITH);
             // 
             // label1
             // 
@@ -84,7 +84,7 @@
             this.button4.TabIndex = 4;
             this.button4.Text = "5. GetAwaiter";
             this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.CONTINUE_WITH);
+            this.button4.Click += new System.EventHandler(this.GET_AWAITER);
             // 
             // button5
             // 
@@ -127,8 +127,8 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Name = "FewTasks";
-            this.Text = "FewTasks";
+            this.Name = "FewTasksForm";
+            this.Text = "FewTasksForm";
             this.ResumeLayout(false);
             this.PerformLayout();
 

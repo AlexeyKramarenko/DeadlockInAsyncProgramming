@@ -128,7 +128,7 @@ namespace Application
 
             var result = await _service
                                    .SafeMethodAsync("https://www.google.com") // on UI and on ThreadPool threads
-                                   .ConfigureAwait(true); // Continue next part of click method on UI thread because of 
+                                   .ConfigureAwait(true); // Continue next part of click method on UI thread 
 
             label1.Text = result; // on UI thread
 
